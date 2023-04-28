@@ -41,11 +41,11 @@ public class GamePlay {
             deck.create();
             deck.shuffle();
             deck.display(players, cardsForPlayer);
-        } while (oneMoreRound());
+        } while (oneMoreDeal());
 
     }
 
-    public static boolean oneMoreRound() {
+    public static boolean oneMoreDeal() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Do you want a new deal?\n"
                 + "y - yes\n"
